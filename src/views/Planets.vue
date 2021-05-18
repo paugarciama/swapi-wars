@@ -3,7 +3,7 @@
 
     <header>
       <h1>Planets List</h1>
-      <p>Get lost through this huge galaxy</p>
+      <p>Get lost on this huge galaxy</p>
     </header>
 
     <div v-if="error">{{ error }}</div>

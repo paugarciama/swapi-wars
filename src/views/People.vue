@@ -1,4 +1,5 @@
 <template>
+
   <div class="people-wrapper">
 
     <header>
@@ -9,9 +10,7 @@
     <div v-if="error">{{ error }}</div>
 
     <div v-if="characters">
-      <article v-for="character in characters" :key="character">
-        <h3>{{ character }}</h3>
-      </article>
+      <PeopleList :characters="characters" />
     </div>
 
     <div v-else>
@@ -19,14 +18,19 @@
     </div>
 
   </div>
+  
 </template>
 
 <script>
+import PeopleList from '@/components/PeopleList'
 import Spinner from '@/components/Spinner'
 import getPeople from '@/composables/getPeople'
 
 export default {
-  components: { Spinner },
+  components: { 
+    PeopleList,
+    Spinner 
+  },
   setup() {
     const { characters, error, load } = getPeople()
 

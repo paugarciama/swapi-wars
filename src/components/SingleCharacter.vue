@@ -1,13 +1,13 @@
 <template>
 
   <div class="list-card">
-    <h3>{{ starship }}</h3>
+    <h3>{{ character }}</h3>
   </div>
 
 </template>
 
 <script>
 export default {
-  props: ['starship']
+  props: ['character']
 }
 </script>
