@@ -1,16 +1,26 @@
 <template>
 
-  <h1>Star Wars</h1>
-  <p>Don't miss anything</p>
+  <header>
+    <h1>Star Wars Lore</h1>
+    <p>May this wiki be with you</p>
+  </header>
+  
 
-  <CategoryCard v-for="category in categories" :key="category">
-    <template v-slot:category-icon>
-      <i :class="category.icon"></i>
-    </template>
-    <template v-slot:category>
-      <h3>{{ category.name }}</h3>
-    </template>
-  </CategoryCard>
+  <section class="categories-wrapper">
+    <article v-for="category in categories" :key="category">
+      <router-link :to="{ path: category.path }">
+        <CategoryCard>
+          <template v-slot:category-icon>
+            <i :class="category.icon"></i>
+          </template>
+          <template v-slot:category>
+            <h3>{{ category.name }}</h3>
+          </template>
+        </CategoryCard>
+      </router-link>
+    </article>
+  </section>
+  
 
 </template>
 
@@ -24,12 +34,36 @@ export default {
   },
   setup() {
     const categories = [
-      { icon: 'fas fa-users', name: 'People'},
-      { icon: 'fas fa-fighter-jet', name: 'Starships'},
-      { icon: 'fas fa-globe-europe', name: 'Planets'}
+      { name: 'People', path: '/people', icon: 'fas fa-users' },
+      { name: 'Starships', path: '/starships', icon: 'fas fa-fighter-jet' },
+      { name: 'Planets', path: '/planets', icon: 'fas fa-globe-europe' }
     ]
 
     return { categories }
   }
 }
 </script>
+
+<style>
+header {
+  margin-top: 3rem;
+  color: white;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+header p {
+  font-size: 1.2rem;
+}
+.categories-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 300px;
+  margin: 50px auto;
+}
+a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+</style>

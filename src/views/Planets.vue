@@ -1,5 +1,5 @@
 <template>
-  
+  Planets List
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  
+  Starships List
 </template>
 
 <script>
