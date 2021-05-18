@@ -1,7 +1,7 @@
 <template>
-  <div>
-    
-    <h3><slot name="category"></slot></h3>
+  <div class="category-container">
+    <slot name="category-icon"></slot>
+    <slot name="category"></slot>
   </div>
 </template>
 
@@ -12,5 +12,7 @@ export default {
 </script>
 
 <style>
-
+.category-container {
+  
+}
 </style>
