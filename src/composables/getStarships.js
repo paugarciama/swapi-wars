@@ -13,7 +13,9 @@ const getStarships = () => {
         throw new Error("Data has been lost in the outer space...")
       }
   
-      starships.value = await data.json()
+      let response = await data.json()
+      starships.value = response.results
+
   
     } catch(e) {
       error.value = e.message

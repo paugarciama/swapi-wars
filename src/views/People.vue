@@ -18,13 +18,14 @@
     </div>
 
   </div>
-  
+
 </template>
 
 <script>
 import PeopleList from '@/components/PeopleList'
 import Spinner from '@/components/Spinner'
 import getPeople from '@/composables/getPeople'
+import { onMounted } from '@vue/runtime-core'
 
 export default {
   components: { 
@@ -34,7 +35,10 @@ export default {
   setup() {
     const { characters, error, load } = getPeople()
 
-    load()
+    onMounted(() => {
+      load()
+    })
+    
 
     return { characters, error }
   }

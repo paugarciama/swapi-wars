@@ -12,8 +12,10 @@ const getPeople = () => {
       if (!data.ok) {
         throw new Error("Data has been lost in the outer space...")
       }
-  
-      characters.value = await data.json()
+      
+      let response = await data.json()
+
+      characters.value = response.results
   
     } catch(e) {
       error.value = e.message

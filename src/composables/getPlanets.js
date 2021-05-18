@@ -12,8 +12,9 @@ const getPlanets = () => {
       if (!data.ok) {
         throw new Error("Data has been lost in the outer space...")
       }
-  
-      planets.value = await data.json()
+      
+      let response = await data.json()
+      planets.value = response.results
   
     } catch(e) {
       error.value = e.message
