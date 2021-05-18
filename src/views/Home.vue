@@ -4,7 +4,6 @@
     <h1>Star Wars Lore</h1>
     <p>May this wiki be with you</p>
   </header>
-  
 
   <section class="categories-wrapper">
     <article v-for="category in categories" :key="category">
@@ -20,12 +19,12 @@
       </router-link>
     </article>
   </section>
-  
 
 </template>
 
 <script>
 import CategoryCard from '@/components/CategoryCard'
+import { ref } from '@vue/reactivity'
 
 export default {
   name: 'Home',
@@ -33,11 +32,11 @@ export default {
     CategoryCard
   },
   setup() {
-    const categories = [
+    const categories = ref([
       { name: 'People', path: '/people', icon: 'fas fa-users' },
       { name: 'Starships', path: '/starships', icon: 'fas fa-fighter-jet' },
       { name: 'Planets', path: '/planets', icon: 'fas fa-globe-europe' }
-    ]
+    ])
 
     return { categories }
   }
