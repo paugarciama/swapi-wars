@@ -50,10 +50,14 @@ header {
   color: white;
 }
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 header p {
   font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-top: -0.5rem;
 }
 .categories-wrapper {
   display: flex;

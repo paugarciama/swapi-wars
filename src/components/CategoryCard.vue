@@ -18,6 +18,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: #2c3e50;
   background-color: rgb(230, 231, 155);
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;

@@ -1,5 +1,5 @@
 <template>
-  People List
+  People list
 </template>
 
 <script>
