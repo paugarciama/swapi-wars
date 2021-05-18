@@ -2,7 +2,7 @@
 
   <header>
     <h1>Star Wars Lore</h1>
-    <p>May this wiki be with you</p>
+    <p>May this wiki be with you...</p>
   </header>
 
   <section class="categories-wrapper">
