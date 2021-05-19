@@ -19,7 +19,7 @@ const routes = [
     component: People
   },
   {
-    path: '/people/:id',
+    path: '/people/details',
     name: 'PeopleDetails',
     component: PeopleDetails,
     props: true

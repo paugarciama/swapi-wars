@@ -1,7 +1,7 @@
 <template>
 
   <div class="list-card">
-    <router-link :to="{ name: 'PeopleDetails', params: { id: character.url }}">
+    <router-link :to="{ name: 'PeopleDetails', params: { url: character.url }}">
       <h3>{{ character.name }}</h3>
     </router-link>
   </div>
@@ -31,5 +31,8 @@ export default {
   background-color: rgb(244, 246, 96);
   transform: translateY(-5px);
   transition: 0.3s;
+}
+a {
+  color: #2c3e50
 }
 </style>
