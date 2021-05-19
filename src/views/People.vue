@@ -35,11 +35,8 @@ export default {
   setup() {
     const { characters, error, load } = getPeople()
 
-    onMounted(() => {
-      load()
-    })
+    load()
     
-
     return { characters, error }
   }
 }

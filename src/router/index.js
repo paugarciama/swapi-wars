@@ -30,7 +30,7 @@ const routes = [
     component: Starships
   },
   {
-    path: '/starships/:id',
+    path: '/starships/details',
     name: 'StarshipDetails',
     component: StarshipDetails,
     props: true
@@ -41,7 +41,7 @@ const routes = [
     component: Planets
   },
   {
-    path: '/planets/:id',
+    path: '/planets/details',
     name: 'PlanetDetails',
     component: PlanetDetails,
     props: true

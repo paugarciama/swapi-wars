@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 
-const getPeopleDetails = (url) => {
+const getDetails = (url) => {
   const details = ref([])
   const error = ref(null)
   
@@ -24,4 +24,4 @@ const getPeopleDetails = (url) => {
   return { details, error, load }
 }
 
-export default getPeopleDetails
+export default getDetails

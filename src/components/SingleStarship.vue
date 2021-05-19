@@ -1,7 +1,9 @@
 <template>
 
   <div class="list-card">
-    <h3>{{ starship.name }}</h3>
+    <router-link :to="{ name: 'StarshipDetails', params: { url: starship.url }}">
+      <h3>{{ starship.name }}</h3>
+    </router-link>
   </div>
 
 </template>
