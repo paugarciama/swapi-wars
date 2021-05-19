@@ -11,13 +11,14 @@
     <section class="details-container">
       <article class="details-card">
         <h3>{{ details.name }}</h3>
-        <p><b>Crew:</b> {{ details.crew }}</p>
-        <p><b>Passengers:</b> {{ details.passengers }}</p>
-        <p><b>Consumables:</b> {{ details.consumables }}</p>
-        <p><b>Cargo Capacity:</b> {{ details.cargo_capacity }}</p> 
-        <p><b>Manufacturer:</b> {{ details.manufacturer }}</p>
-        <p><b>Model:</b> {{ details.model }}</p>
-        <p><b>Hyperdrive Rating:</b> {{ details.hyperdrive_rating }}</p>
+        <p><b>Climate:</b> {{ details.climate }}</p>
+        <p><b>Terrain:</b> {{ details.terrain }}</p>
+        <p><b>Surface Water:</b> {{ details.surface_water }}</p>
+        <p><b>Diameter:</b> {{ details.diameter }}</p> 
+        <p><b>Gravity:</b> {{ details.gravity }}</p>
+        <p><b>Rotation Period:</b> {{ details.rotation_period }}</p>
+        <p><b>Orbital Period:</b> {{ details.orbital_period }}</p>
+        <p><b>Population:</b> {{ details.population }}</p>
       </article>
     </section>
   </div>

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import SinglePlanet from '@/components/SinglePlanet'
+import SinglePlanet from '@/components/singletons/SinglePlanet'
 
 export default {
   props: ['planets'],

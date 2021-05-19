@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import SingleCharacter from '@/components/SingleCharacter'
+import SingleCharacter from '@/components/singletons/SingleCharacter'
 
 export default {
   props: ['characters'],

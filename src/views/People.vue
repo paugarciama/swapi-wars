@@ -22,10 +22,9 @@
 </template>
 
 <script>
-import PeopleList from '@/components/PeopleList'
+import PeopleList from '@/components/lists/PeopleList'
 import Spinner from '@/components/Spinner'
 import getPeople from '@/composables/getPeople'
-import { onMounted } from '@vue/runtime-core'
 
 export default {
   components: { 

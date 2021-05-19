@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import SingleStarship from '@/components/SingleStarship'
+import SingleStarship from '@/components/singletons/SingleStarship'
 
 export default {
   props: ['starships'],

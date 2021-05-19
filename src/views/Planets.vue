@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import PlanetList from '@/components/PlanetList'
+import PlanetList from '@/components/lists/PlanetList'
 import Spinner from '@/components/Spinner'
 import getPlanets from '@/composables/getPlanets'
 

@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import StarshipList from '@/components/StarshipList' 
+import StarshipList from '@/components/lists/StarshipList' 
 import Spinner from '@/components/Spinner'
 import getStarships from '@/composables/getStarships'
 
