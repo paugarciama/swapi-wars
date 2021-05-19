@@ -52,8 +52,6 @@ export default {
 
     load()
 
-    console.log(characters)
-
     const displayedCharacters = computed(() => {
       let from = (page.value * perPage.value) - perPage.value
       let to = (page.value * perPage.value)

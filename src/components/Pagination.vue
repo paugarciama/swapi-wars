@@ -58,7 +58,7 @@ export default {
   gap: 0.5rem;
   max-width: 300px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
   .pagination {
     flex-direction: column;
     gap: 0rem;
