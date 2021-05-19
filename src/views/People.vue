@@ -17,6 +17,8 @@
       <Spinner />
     </div>
 
+    <BackButton />
+
   </div>
 
 </template>
@@ -24,12 +26,14 @@
 <script>
 import PeopleList from '@/components/lists/PeopleList'
 import Spinner from '@/components/Spinner'
+import BackButton from '@/components/BackButton'
 import getPeople from '@/composables/getPeople'
 
 export default {
   components: { 
     PeopleList,
-    Spinner 
+    Spinner,
+    BackButton 
   },
   setup() {
     const { characters, error, load } = getPeople()

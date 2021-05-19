@@ -16,18 +16,22 @@
       <Spinner />
     </div>
 
+    <BackButton />
+
   </div>
 </template>
 
 <script>
 import StarshipList from '@/components/lists/StarshipList' 
 import Spinner from '@/components/Spinner'
+import BackButton from '@/components/BackButton'
 import getStarships from '@/composables/getStarships'
 
 export default {
   components: { 
     StarshipList,
-    Spinner 
+    Spinner,
+    BackButton
   },
   setup() {
     const { starships, error, load } = getStarships()

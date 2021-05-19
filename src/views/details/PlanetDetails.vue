@@ -27,17 +27,20 @@
     <Spinner />
   </div>
   
+  <BackButton />
   
 </template>
 
 <script>
 import getDetails from '@/composables/getDetails'
 import Spinner from '@/components/Spinner'
+import BackButton from '@/components/BackButton'
 
 export default {
   props: ['url'],
   components: {
-    Spinner
+    Spinner,
+    BackButton
   },
   setup(props) {
     const { details, error, load } = getDetails(props.url)

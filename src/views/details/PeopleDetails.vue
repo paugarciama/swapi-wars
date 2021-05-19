@@ -25,18 +25,21 @@
   <div v-else>
     <Spinner />
   </div>
-  
+
+  <BackButton />
   
 </template>
 
 <script>
+import BackButton from '@/components/BackButton'
 import getDetails from '@/composables/getDetails'
 import Spinner from '@/components/Spinner'
 
 export default {
   props: ['url'],
   components: {
-    Spinner
+    Spinner,
+    BackButton
   },
   setup(props) {
     const { details, error, load } = getDetails(props.url)
