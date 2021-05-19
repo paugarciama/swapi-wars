@@ -16,18 +16,10 @@
       <Spinner />
     </div>
 
-    <div class="pagination">
-      <button v-if="page !== 1" @click="page--">Before</button>
-      
-      <button 
-        v-for="pageNumber in pages" 
-        :key="pageNumber"
-        @click="page = pageNumber">
-        {{ pageNumber }}
-      </button>
-      
-      <button v-if="page < pages.length" @click="page++">Next</button>
-    </div>
+    <Pagination 
+      :page="page" 
+      :pages="pages"
+      @sendPage="page = $event"/>
 
     <BackButton />
 
@@ -38,6 +30,7 @@
 import PlanetList from '@/components/lists/PlanetList'
 import Spinner from '@/components/Spinner'
 import BackButton from '@/components/BackButton'
+import Pagination from '@/components/Pagination'
 import getPlanets from '@/composables/getPlanets'
 import { ref, computed } from '@vue/runtime-core'
 
@@ -45,7 +38,8 @@ export default {
   components: { 
     PlanetList,
     Spinner,
-    BackButton 
+    BackButton,
+    Pagination 
   },
   setup() {
     const page = ref(1)
@@ -66,7 +60,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>
