@@ -25,6 +25,7 @@ export default {
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
   transition: 0.3s;
+  margin: 0 1rem;
 }
 .category-container:hover {
   cursor: pointer;
@@ -37,5 +38,13 @@ export default {
 }
 .category-container h3 {
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 400px) {
+  .category-container i {
+    font-size: 2.5rem;
+  }
+  .category-container h3 {
+    font-size: 1.3rem;
+  }
 }
 </style>

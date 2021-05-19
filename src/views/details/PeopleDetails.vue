@@ -55,6 +55,7 @@ export default {
 .details-container {
   max-width: 300px;
   margin: 3rem auto;
+  padding: 0rem 1rem;
 }
 .details-card {
   display: flex;

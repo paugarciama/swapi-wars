@@ -1,25 +1,27 @@
 <template>
+  <div>
 
-  <header>
-    <h1>Star Wars Lore</h1>
-    <p>May this wiki be with you...</p>
-  </header>
+    <header>
+      <h1>Star Wars Lore</h1>
+      <p>May this wiki be with you...</p>
+    </header>
 
-  <section class="categories-wrapper">
-    <article v-for="category in categories" :key="category">
-      <router-link :to="{ path: category.path }">
-        <CategoryCard>
-          <template v-slot:category-icon>
-            <i :class="category.icon"></i>
-          </template>
-          <template v-slot:category>
-            <h3>{{ category.name }}</h3>
-          </template>
-        </CategoryCard>
-      </router-link>
-    </article>
-  </section>
+    <section class="categories-wrapper">
+      <article v-for="category in categories" :key="category">
+        <router-link :to="{ path: category.path }">
+          <CategoryCard>
+            <template v-slot:category-icon>
+              <i :class="category.icon"></i>
+            </template>
+            <template v-slot:category>
+              <h3>{{ category.name }}</h3>
+            </template>
+          </CategoryCard>
+        </router-link>
+      </article>
+    </section>
 
+  </div>
 </template>
 
 <script>
@@ -45,8 +47,9 @@ export default {
 
 <style>
 header {
-  margin-top: 3rem;
   color: white;
+  margin: 0 1.5rem;
+  margin-top: 3rem;
 }
 header h1 {
   font-size: 2.2rem;
@@ -68,5 +71,13 @@ header p {
 a {
   color: white;
   text-decoration: none;
+}
+@media only screen and (max-width: 400px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
 }
 </style>

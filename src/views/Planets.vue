@@ -43,8 +43,8 @@ export default {
   },
   setup() {
     const page = ref(1)
-    const perPage = ref(10)
-    const pages = ref([1, 2, 3, 4, 5, 6])
+    const perPage = ref(9)
+    const pages = ref([1, 2, 3, 4, 5, 6, 7])
 
     const { planets, error, load } = getPlanets()
 
