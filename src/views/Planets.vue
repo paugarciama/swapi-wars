@@ -8,10 +8,8 @@
 
     <div v-if="error">{{ error }}</div>
 
-    <div v-if="planets">
-      <article v-for="planet in planets" :key="planet">
-        <h3>{{ planet }}</h3>
-      </article>
+    <div v-if="planets.length">
+      <PlanetList :planets="planets" />
     </div>
 
     <div v-else>
@@ -22,11 +20,15 @@
 </template>
 
 <script>
+import PlanetList from '@/components/PlanetList'
 import Spinner from '@/components/Spinner'
 import getPlanets from '@/composables/getPlanets'
 
 export default {
-  components: { Spinner },
+  components: { 
+    PlanetList,
+    Spinner 
+  },
   setup() {
     const { planets, error, load } = getPlanets()
 

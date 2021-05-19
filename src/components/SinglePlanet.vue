@@ -1,7 +1,7 @@
 <template>
 
   <div class="list-card">
-    <h3>{{ planet }}</h3>
+    <h3>{{ planet.name }}</h3>
   </div>
 
 </template>

@@ -66,7 +66,7 @@ header p {
   margin: 50px auto;
 }
 a {
-  color: #2c3e50;
+  color: white;
   text-decoration: none;
 }
 </style>

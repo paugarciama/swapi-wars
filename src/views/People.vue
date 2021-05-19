@@ -9,7 +9,7 @@
 
     <div v-if="error">{{ error }}</div>
 
-    <div v-if="characters">
+    <div v-if="characters.length">
       <PeopleList :characters="characters" />
     </div>
 

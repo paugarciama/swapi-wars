@@ -8,10 +8,8 @@
 
     <div v-if="error">{{ error }}</div>
 
-    <div v-if="starships">
-      <article v-for="starship in starships" :key="starship">
-        <h3>{{ starship }}</h3>
-      </article>
+    <div v-if="starships.length">
+      <StarshipList :starships="starships" />
     </div>
 
     <div v-else>
@@ -22,11 +20,15 @@
 </template>
 
 <script>
+import StarshipList from '@/components/StarshipList' 
 import Spinner from '@/components/Spinner'
 import getStarships from '@/composables/getStarships'
 
 export default {
-  components: { Spinner },
+  components: { 
+    StarshipList,
+    Spinner 
+  },
   setup() {
     const { starships, error, load } = getStarships()
 
