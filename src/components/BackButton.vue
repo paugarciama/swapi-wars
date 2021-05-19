@@ -31,7 +31,7 @@ button {
   border: 0px solid black;
   border-radius: 0.5rem;
   outline: none;
-  margin-top: 3rem;
+  margin: 3rem auto;
   transition: 0.3s;
 }
 button:hover {
