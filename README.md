@@ -9,4 +9,4 @@ Talking about Vue 3, I've worked with the Composition API for every script, usin
 I've taken the communication between components via props and emits, 
 as there was no need of using Vuex at this point. I've used Vue Router to set views for each category and dynamic routes to see details of an individual element.
 
-You can check it here: https://paugarciamartinez.github.io/swapi-wars/
+You can check it here: https://paugarciama.github.io/swapi-wars/
